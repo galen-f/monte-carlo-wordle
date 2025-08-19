@@ -4,7 +4,7 @@ This project used the game wordle to explain one of the most important tools I l
 <hr>
 
 ## What is Monte Carlo?
-Named after the famous Monegasque casino, Monte Carlo is a way of simulating uncertainty. Take the principle that playing roulette 1000 times would start to reveal just how rigged the game is, we can play 1000 games of Wordle to figure out just how good out opener word is.
+Named after the famous Monegasque casino, Monte Carlo is a way of simulating uncertainty. Take the principle that playing roulette 1000 times would start to reveal just how rigged the game is, we can play 1000 games of Wordle to figure out just how good our opener word is.
 
 **Simply put** we can measure a slice of random events to get a reasonably accurate understanding of the odds of success and failure in an uncertain environment.
 
@@ -28,8 +28,8 @@ If a strategy only works in *perfect* scenarios but fails miserably in downturns
 
 ## Why does this matter to everyone?
 Because Monte Carlo encourages you to think in probabilities, not certainties.
-❌ "This will happen"
-✅ "This *could* happen, and here is how likely it is"
+❌ "This will happen".
+✅ "This *could* happen, and here is how likely it is".
 
 
 ## What's in this repo
@@ -39,10 +39,10 @@ Because Monte Carlo encourages you to think in probabilities, not certainties.
 
 
 ## How to run
-1. Clone the repo
-2. Open the notebook in Jupyter or VSCode
-3. Run all cells
+1. Clone the repo.
+2. Open the notebook in Jupyter or VSCode.
+3. Run all cells.
 
 **You'll see:**
-- The chance of solving in 6 or fewer guesses
-- The average number of guesses
+- The chance of solving in 6 or fewer guesses.
+- The average number of guesses.
