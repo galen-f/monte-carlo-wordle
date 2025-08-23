@@ -34,6 +34,9 @@ Because Monte Carlo encourages you to think in probabilities, not certainties.
 
 ## What's in this repo
 - **Notebook** walks you through solving Wordle with a Monte Carlo engine.
+- **count_letters.py** Runs through all possible Worlde works and notes how often each letter appears and where.
+- **score_words.py** measures every possible word with how well it fits the frequency of letters, then assigns it a score.
+- **position_letter_count.txt** holds data outputted by count_letters.py
 - **answers.txt** is a list of all possible Wordle solutions.
 - **guesses.txt** is a list of all valid Wordle guesses.
 
