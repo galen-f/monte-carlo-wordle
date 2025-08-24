@@ -26,6 +26,25 @@ If a strategy only works in *perfect* scenarios but fails miserably in downturns
 
 <hr>
 
+## Results
+Running the full repo produces a bunch of fun insights. I even exported the results into Excel to make some quick charts (didn’t bother wiring up Matplotlib yet).
+
+### Top Five Openers
+| Word  | Avg. Guesses | Success Rate |
+| ----- | ------------ | ------------ |
+| **SLATE** | **3.80**     | **98.8%**    |
+| SALET | 3.82         | 98.7%        |
+| STARE | 3.82         | 98.2%        |
+| STALE | 3.83         | 98.6%        |
+| STANE | 3.83         | 98.6%        |
+
+### Visualization
+Here’s the scatter plot of the top-performing words (average guesses vs. success rate):
+<p align="center"> <img width="600" alt="Average Guesses and Success Rate" src="https://github.com/user-attachments/assets/b480dc5b-50eb-4e8f-8643-069e94c15a2c" /> </p>
+
+
+<hr>
+
 ## Why does this matter to everyone?
 Because Monte Carlo encourages you to think in probabilities, not certainties.
 ❌ "This will happen".
@@ -41,7 +60,7 @@ Because Monte Carlo encourages you to think in probabilities, not certainties.
 - **./data**
     - **answers.txt** is a list of all possible Wordle solutions.
     - **guesses.txt** is a list of all valid Wordle guesses.
-    - **letter_count.txt** holds data outputted by count_letters.py
+    - **letter_counts.txt** holds data outputted by count_letters.py
     - **top_words.txt** is a list of the top scoring words, produced by score_words
     - **results.csv** is a list of the top performers created by the simulator along with their stats.
 
@@ -49,7 +68,14 @@ Because Monte Carlo encourages you to think in probabilities, not certainties.
 1. Clone the repo.
 2. Open the notebook in Jupyter or VSCode.
 3. Run all cells.
-
 **You'll see:**
 - The chance of solving in 6 or fewer guesses.
 - The average number of guesses.
+
+**OR**
+1. Clone the repo.
+2. Run count_letters.py to produce the list of letter occurrences.
+3. Run the contents of score_words.ipynb to get a list of all top scoring words.
+4. Run simulator.ipynb
+**You'll see:**
+- A ./data/results file listing the performance of all words in top_words.txt. 
