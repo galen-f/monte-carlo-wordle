@@ -8,7 +8,7 @@ letter, then 'B', then 'C' and so on. This is outputted to txt file, ./data/lett
 """
 
 # Answers are all possible wordle answer about 2000 words.
-with open("./answers.txt") as f:
+with open("./data/answers.txt") as f:
     ANSWERS = [w.strip().upper() for w in f if len(w.strip()) == 5]
     LETTER_COUNTS = {letter: 0 for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
     for word in ANSWERS:
