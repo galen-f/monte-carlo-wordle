@@ -33,13 +33,17 @@ Because Monte Carlo encourages you to think in probabilities, not certainties.
 
 
 ## What's in this repo
-- **Notebook** walks you through solving Wordle with a Monte Carlo engine.
-- **count_letters.py** Runs through all possible Worlde works and notes how often each letter appears and where.
-- **score_words.py** measures every possible word with how well it fits the frequency of letters, then assigns it a score.
-- **position_letter_count.txt** holds data outputted by count_letters.py
-- **answers.txt** is a list of all possible Wordle solutions.
-- **guesses.txt** is a list of all valid Wordle guesses.
+- **Monte_Carlo_Wordle_Demo.ipynb** walks you through solving Wordle with a Monte Carlo engine.
+- **Count_Letters.py** runs through all possible Wordle words and notes how often each letter appears and where.
+- **Score_Words.ipynb** measures every possible word with how well it fits the frequency of letters, then assigns it a score.
+- **Simulator.ipynb** simulates Wordle games for all top scoring words, producing a list of the best performers.
 
+- **./data**
+    - **answers.txt** is a list of all possible Wordle solutions.
+    - **guesses.txt** is a list of all valid Wordle guesses.
+    - **letter_count.txt** holds data outputted by count_letters.py
+    - **top_words.txt** is a list of the top scoring words, produced by score_words
+    - **results.csv** is a list of the top performers created by the simulator along with their stats.
 
 ## How to run
 1. Clone the repo.
